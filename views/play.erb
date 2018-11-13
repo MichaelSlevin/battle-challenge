@@ -1,0 +1,7 @@
+<h1>Hello <%= @game.players[0].name %> and <%= @game.players[1].name%></h1>
+
+<p><%= @game.players[1].name %> hp: <%= @game.players[1].hp %></p>
+<p>
+<form action="/attack" method="post">
+  <input type="submit" value="attack_player_2">Attack Player 2</input>
+</form>
